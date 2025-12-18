@@ -299,3 +299,224 @@ AKS is a managed Kubernetes service.
 
 ---
 
+# 4. Azure Storage Services
+
+Azure Storage provides scalable, durable, and secure cloud storage solutions.
+
+---
+
+## 4.1 Azure Blob Storage
+
+Azure Blob Storage is an **object storage service** for unstructured data.
+
+### What can be stored?
+
+* Images
+* Videos
+* Documents
+* Backups
+* Logs
+* Big data files
+
+### Blob Types
+
+* **Block Blob** – Text and binary data (most common)
+* **Append Blob** – Logging data
+* **Page Blob** – Virtual hard disks (VHD)
+
+### Example Use Cases
+
+* Data lake storage
+* Media storage
+* Backup & archive
+
+---
+
+## 4.2 Storage Tiers and Replication
+
+### 🔹 Storage Tiers
+
+| Tier    | Use Case                   |
+| ------- | -------------------------- |
+| Hot     | Frequently accessed data   |
+| Cool    | Infrequently accessed data |
+| Archive | Long-term backup           |
+
+### 🔹 Replication Options
+
+| Replication | Description               |
+| ----------- | ------------------------- |
+| LRS         | Locally Redundant Storage |
+| ZRS         | Zone Redundant Storage    |
+| GRS         | Geo Redundant Storage     |
+| GZRS        | Zone + Geo redundancy     |
+
+---
+
+## 4.3 Access Control & Shared Access Signatures (SAS)
+
+### 🔹 Access Control
+
+Azure Storage supports:
+
+* Azure AD (RBAC)
+* Storage account keys
+
+### 🔹 SAS (Shared Access Signature)
+
+SAS provides **time-limited and permission-based access**.
+
+Types of SAS:
+
+* Service SAS
+* Account SAS
+* User Delegation SAS
+
+### Example Use Case
+
+* Grant temporary access to upload/download blobs
+
+---
+
+# 5. Azure Key Vault, Azure Functions & Azure Logic Apps
+
+---
+
+## Azure Key Vault
+
+Azure Key Vault securely stores:
+
+* Secrets (passwords, tokens)
+* Keys
+* Certificates
+
+### Benefits
+
+* Centralized secret management
+* Hardware Security Module (HSM)
+* Integration with Azure services
+
+---
+
+## Azure Functions
+
+Azure Functions is a **serverless compute service**.
+
+### Key Features
+
+* Event-driven execution
+* Auto scaling
+* Pay-per-execution
+
+### Use Cases
+
+* Data processing
+* API endpoints
+* Event handling
+
+---
+
+## Azure Logic Apps
+
+Logic Apps enables **workflow automation** with low-code/no-code approach.
+
+### Features
+
+* Visual designer
+* 400+ connectors
+* Built-in error handling
+
+### Use Cases
+
+* Data integration
+* Business workflows
+* System orchestration
+
+---
+
+# 6. Azure Data Services
+
+---
+
+## 6.1 Azure Data Factory (ADF)
+
+Azure Data Factory is a **cloud ETL/ELT service** for data integration.
+
+---
+
+### 6.1.1 Data Ingestion & Transformation
+
+#### Data Ingestion
+
+* From on-prem, cloud, SaaS
+* Supports batch and incremental loads
+
+Sources:
+
+* Azure Blob
+* Azure SQL
+* AWS S3
+* REST APIs
+
+#### Data Transformation
+
+* Mapping Data Flows (no-code)
+* Azure Databricks
+* Stored procedures
+
+---
+
+### 6.1.2 Pipelines & Activities
+
+#### Pipelines
+
+* Logical grouping of activities
+
+#### Activities
+
+* Copy Activity
+* Data Flow Activity
+* Lookup Activity
+* Web Activity
+
+### Example Pipeline Flow
+
+```
+Source → Copy Activity → Data Flow → Sink
+```
+
+---
+
+## 6.2 Azure SQL Database
+
+Azure SQL Database is a **fully managed relational database** service.
+
+### Features
+
+* Built-in high availability
+* Automatic backups
+* Security & encryption
+
+### Service Models
+
+* Single Database
+* Elastic Pool
+* Managed Instance
+
+### Use Cases
+
+* OLTP workloads
+* Cloud-native applications
+
+---
+
+## Why These Azure Services Matter
+
+* Secure data storage
+* Scalable data pipelines
+* Serverless integration
+* Enterprise-grade security
+
+---
+
+
