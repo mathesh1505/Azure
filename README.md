@@ -426,7 +426,7 @@ Logic Apps enables **workflow automation** with low-code/no-code approach.
 * 400+ connectors
 * Built-in error handling
 
-### Use Cases
+### Use Cases 
 
 * Data integration
 * Business workflows
